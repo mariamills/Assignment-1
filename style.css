@@ -1,0 +1,19 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  color: #262261;
+}
+
+a {
+  color: #262261;
+  text-decoration: none;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  color: #8fd3d9;
+}

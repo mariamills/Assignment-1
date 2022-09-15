@@ -25,3 +25,11 @@ main > ol {
 li + ol {
   list-style-type: lower-roman;
 }
+
+table {
+  border: 1px solid #262261;
+}
+
+thead {
+  background-color: #8fd3d9;
+}

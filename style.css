@@ -17,3 +17,11 @@ nav ul li a:hover,
 nav ul li a:focus {
   color: #8fd3d9;
 }
+
+main > ol {
+  list-style-type: upper-roman;
+}
+
+li + ol {
+  list-style-type: lower-roman;
+}

@@ -53,9 +53,30 @@ footer {
   padding: .5rem;
 }
 
-
 main {
   font-weight: light;
+}
+
+label {
+  display: block;
+}
+
+input {
+  border: 1px solid #262261;
+  border-radius: 30px;
+  margin-bottom: 1rem;
+  padding: .5rem .7rem;
+}
+
+input[type="submit"] {
+  background-color: #262261;
+  color: #fff;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus{
+  background: #8fd3d9;
 }
 
 .grid-layout {

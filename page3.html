@@ -20,8 +20,26 @@
     </ul>
   </nav>
   <main id="main">
-    <h1>Welcome to my site!</h1>
-    <p>Remember to dream big!</p>
+    <form name="form" id="form" onsubmit="return validateForm()">
+      <label for="fname">First Name</label>
+      <input type="text" name="fname" id="fname" placeholder="First Name" size="50" maxlength="50">
+      <label for="lname">Last Name</label>
+      <input type="text" name="lname" id="lname" placeholder="Last Name" size="50" maxlength="50">
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" placeholder="Email">
+      <label for="birthday">Birthday</label>
+      <input type="date" name="birthday" id="birthday" value="birthday" min="1899-12-31" max="2022-12-31">
+      <label for="username">Username</label>
+      <input type="text" name="username" id="username" placeholder="Username" minlength="5" maxlength="10" required>
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password" placeholder="Password" minlength="8" required>
+      <label for="confirmPassword">Confirm Password</label>
+      <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm Password" minlength="8" required>
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" placeholder="###-###-####">
+      <br>
+      <input type="submit" value="Submit">
+    </form>
   </main>
   <footer id="footer">
     &copy; Maria Mills | 706-505-7559 | maria@mariamills.org

@@ -29,7 +29,7 @@ li + ol {
 table {
   border: 1px solid #8fd3d9;
   font-size: 1.5em;
-  font-family: sans-serif;
+  font-family: monospace;
 }
 
 thead {

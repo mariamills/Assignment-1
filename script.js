@@ -1,7 +1,8 @@
-// Username Array
-let usernames = ["Harry", "Elizabeth", "Shana"];
+// Username Array to 'act' as a database
+//Array will not reset upon submition / page refresh however because it isn't locally stored or using an actual DB
+const usernames = ["Harry", "Elizabeth", "Shana"];
 
-
+//Function for form validation
 function validateForm() {
   const password = document.forms["form"]["password"].value;
   const confirmPassword = document.forms["form"]["confirmPassword"].value;
@@ -19,7 +20,7 @@ function validateForm() {
   } else {
     //If username is not in the array, add it and then give success message
     usernames.push(username);
-    alert("Username accepted.");
+    alert("Welcome");
     return true;
   }
 }

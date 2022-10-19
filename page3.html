@@ -11,6 +11,7 @@
   <header id="header">
     <img src="images/banner.webp">
   </header>
+  <!--   Navbar -->
   <nav id="navbar">
     <ul>
       <li><a href="index.html">Home</a></li>
@@ -19,28 +20,40 @@
       <li><a href="https://www.columbusstate.edu/" target="_blank">CSU's Main Page</a></li>
     </ul>
   </nav>
+  <!--   Main content -->
   <main id="main">
-    <form name="form" id="form" onsubmit="return validateForm()">
+<!--     Form -->
+<!--     When we submit the form, call the validateForm function -->
+    <form name="form" action="https://webdevbasics.net/scripts/yoga.php" method="POST" id="form" onsubmit="return validateForm()">
+<!--       Label and input field for First Name -->
       <label for="fname">First Name</label>
       <input type="text" name="fname" id="fname" placeholder="First Name" size="50" maxlength="50">
+      <!--       Label and input field for Last Name -->
       <label for="lname">Last Name</label>
       <input type="text" name="lname" id="lname" placeholder="Last Name" size="50" maxlength="50">
+      <!--       Label and input field for Email -->
       <label for="email">Email</label>
       <input type="email" name="email" id="email" placeholder="Email">
+      <!--       Label and input field for Birthday -->
       <label for="birthday">Birthday</label>
-      <input type="date" name="birthday" id="birthday" value="birthday" min="1899-12-31" max="2022-12-31">
+      <input type="date" name="birthday" id="birthday" value="birthday" min="1900-01-01" max="2022-12-31">
+      <!--       Label and input field for Username -->
       <label for="username">Username</label>
       <input type="text" name="username" id="username" placeholder="Username" minlength="5" maxlength="10" required>
+      <!--       Label and input field for Password -->
       <label for="password">Password</label>
       <input type="password" name="password" id="password" placeholder="Password" minlength="8" required>
+      <!--       Label and input field for Password Confirmation -->
       <label for="confirmPassword">Confirm Password</label>
       <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm Password" minlength="8" required>
+      <!--       Label and input field for Phone Number -->
       <label for="phone">Phone Number</label>
-      <input type="tel" id="phone" placeholder="###-###-####">
+      <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="###-###-####">
       <br>
       <input type="submit" value="Submit">
     </form>
   </main>
+<!--   Footer -->
   <footer id="footer">
     &copy; Maria Mills | 706-505-7559 | maria@mariamills.org
   </footer>

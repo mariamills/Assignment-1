@@ -83,7 +83,7 @@ input[type="submit"]:focus{
   display: grid;
   grid-template-areas:
     "header header header"
-    "navbar main main"
+    "navbar main aside"
     "footer footer footer";
 }
 
@@ -99,8 +99,16 @@ input[type="submit"]:focus{
   grid-area: main;
 }
 
+#aside {
+  grid-area: aside;
+}
+
 #footer {
   grid-area: footer;
+}
+
+.canvas {
+  border: 1px solid #000;
 }
 
 h1 {
@@ -121,4 +129,19 @@ img {
 
 .even {
   background-color: #8fd3d9;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  body {
+    background-color: #eee;
+  }
+  .grid-layout {
+  grid-template-areas:
+    "header"
+    "navbar"
+    "main" 
+    "aside"
+    "footer";
+  }
 }
